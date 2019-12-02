@@ -38,11 +38,7 @@ int main(int argc,char * argv[])
       {
         //CHECK FOR EXACT MATCH
 
-        char temp2[50];
-        printf("%s",temp);
-        strcpy(temp2,temp);
-        printf("temp 2 %s", temp2);
-        char *startemp =strchr(temp2,'*');
+        char *startemp =strchr(temp,'*');
             if(strncmp(buf,temp,x-1)==0)
               {
                 temp[x-1]= '-';
@@ -56,7 +52,7 @@ int main(int argc,char * argv[])
 
               else if (startemp!=NULL && temp[0]!='*')
               {
-                printf("startemp %s",startemp);
+                //printf("startemp %s",startemp);
                 //printf("temp %s",temp2);
                 int len=strlen(startemp);
                 int len_temp=strlen(temp);
