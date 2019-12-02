@@ -1,0 +1,26 @@
+# Network-Address-Translator
+As the demand for number of IP address increased, NAT came into picture. Network address translation (NAT) is a method of remapping one IP address space into another by modifying network address information in the IP header of packets while they are in transit across a traffic routing device. It converts private IP address into public address. The user can access the internet only through this public address. NAT helped slow down the depletion of Ipv4 address. 
+
+This project is a shows the code for mapping the private address into public address.
+
+The NAT file has the mapping for public Address to private address.
+The flow file has the entries for which match has to be found from NAT file.
+The ouput will display the match if found, otherwise displays "No nat match found for (entry)".
+
+Testing the code:(Scenarios)
+- The code works for wide variety of scenarios like
+    a) All inputs doesnt match the NAT file entries.
+    b) All inputs match a single NAT entry.
+    c) If only port number match with a NAT table entry *:portnumber.
+    d) No entries in NAT file.
+    c) No entries in Flow file.
+    
+Commands used to run the code:
+1) gcc -o main main.c
+2) ./main (Flow file) (NAT file) (Output file)
+A
+NOTE:
+If given more time i would like to make the code more structured by writing functions.
+I need to remove a "\n" for ip address:* kind of input to print the output in a single line.
+
+
