@@ -22,5 +22,7 @@ A
 NOTE:
 If given more time i would like to make the code more structured by writing functions.
 I need to remove a "\n" for ip address:* kind of input to print the output in a single line.
+I could have modified the code by combining two conditions the case with :*portnumber, ip:*.
+
 
 
